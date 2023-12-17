@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Inconsolata&family=Marcellus&family=Poppins:wght@300&family=Vina+Sans&display=swap");
+
+:root {
+  --headingFont: "Vina Sans", sans-serif;
+  --subHeadingFont: "Marcellus", serif;
+  --bodyFont: "Poppins", sans-serif;
+  --theoryFont: "Caveat", cursive;
+  --buttonFont: "Inconsolata", monospace;
+  --bodyColor: #262833;
+  --colorYellow: #ffaf5f;
+  --colorGreen: #4acfab;
+  --colorBlue: #7e8ce0;
+  --colorPink: #37c7d0;
+  --colorCream: #fea48e;
+}
+
+* {
+  font-family: var(--bodyFont);
+  padding: 0;
+  margin: 0;
+  background-color: var(--bodyColor);
+  color: var(--colorCream);
+}
+
+.hF {
+  font-family: var(--headingFont);
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.ct {
+  text-align: center;
+}
+
+.shF {
+  font-family: var(--subHeadingFont);
+  letter-spacing: 0.5rem;
+}
+
+.bf {
+  font-family: var(--subHeadingFont);
+}
+
+.tF {
+  font-family: var(--bodyFont);
+}
+
+.btnf {
+  font-family: var(--buttonFont);
+}
+
+.useStateDiv button {
+  padding: 2.5px 5px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+button {
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  font-family: var(--buttonFont);
+}
+
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background-color: #7e8ce0;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 5px;
+  color: #262833;
+}
+
+.formBlock {
+  background-color: var(--colorCream);
+  width: 70%;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.formInput {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+input {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  outline: none;
+  padding: 1px 5px;
+}
+
+.usersBlock {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px auto;
+}
+
+.usersBlock p {
+  background-color: blueviolet;
+  margin: 5px;
+  padding: 2.5px 5px;
+  border-radius: 5px;
+  color: #262833;
+}
+
+.splFormBlock {
+  width: 90%;
+}
+
+h6 {
+  margin-top: 10px;
+}
+
+.inValidBlock {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.inValidBlock span {
+  display: block;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.reducerFormDiv {
+  margin: 15px;
+}
+
+.reducerForm {
+  background-color: var(--colorBlue);
+  border: solid white 2.5px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.reducerForm div {
+  padding: 10px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.isValidEmail {
+  border: solid white 3.5px;
+  border-radius: 10px;
+}
+
+.notValidEmail {
+  border: solid red 3.5px;
+  border-radius: 10px;
+}
+
+.isValidPassword {
+  border: solid white 3.5px;
+  border-radius: 10px;
+}
+
+.notValidPassword {
+  border: solid red 3.5px;
+  border-radius: 10px;
+}
+
+.contextText {
+  font-family: var(--headingFont);
+  letter-spacing: 0.25rem;
+  font-weight: 300;
+}
+
+.contextSection {
+  font-family: var(--buttonFont);
+  color: whitesmoke;
+  border: green solid 2px;
+  margin: 5px auto;
+  width: 70%;
+  padding: 5px;
+}
+
+.memoDiv {
+  width: 40%;
+  margin: 25px auto;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+}
+
+.memoDiv button {
+  padding: 15px;
+}
+
+.callBackDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.useMemoDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 10px auto;
+}

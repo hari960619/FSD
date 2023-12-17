@@ -1,0 +1,35 @@
+import React, { useRef, useEffect } from 'react';
+
+const ValueChangeDetector = ({ value }) => {
+  const previousValue = useRef(null);
+
+  useEffect(() => {
+    // Compare previous and current values
+    if (previousValue.current !== null && previousValue.current !== value) {
+      console.log('Value changed:', value);
+      // Perform actions based on the value change
+    }
+
+    // Update the stored value for the next comparison
+    previousValue.current = value;
+  }, [value]);
+
+  return (
+    <div>
+      <p>Current Value: {value}</p>
+      {/* ... */}
+    </div>
+  );
+};
+
+export default ValueChangeDetector;
+
+The ValueChangeDetector component takes a prop value that it wants to monitor for changes.
+
+It uses useRef to store the previous value of the value prop.
+
+Inside the useEffect, it checks if the previous value is not null (which means it's not the initial render) and if the current value is different from the previous one.
+
+If there's a change, it logs a message indicating the change.
+
+Finally, it updates previousValue.current with the current value for the next comparison.

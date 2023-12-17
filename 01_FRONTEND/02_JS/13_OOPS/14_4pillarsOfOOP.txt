@@ -1,0 +1,11 @@
+Encapsulation - Organizes code into containers that relate to each other and makes it easier to maintain and reuse. We wrap code inside an object relating one another.
+i.e., constructor and function declared outside the constructor, inside a class. 
+
+Abstraction - Hides the complexity from the user by doing the method calculations behind the scenes. This helps us with private variables.
+i.e., It helps use private and public variables, also the use of "this" makes our job easy in pointing the object to the right Object.
+
+Inheritance - Gives the properties of a class to another class, keeping code DRY and saving on memory space. 
+i.e., When we use "extends" it passes on the entire properties to the child so that it can used without so we don't need repeat ourselves. 
+
+Polymorphism - The ability of an object to take on many forms allowing methods to be used differently by different classes.
+i.e., using the "new" keyword we can make multiple copies of the object.

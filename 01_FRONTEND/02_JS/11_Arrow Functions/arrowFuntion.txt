@@ -1,0 +1,13 @@
+Arrow Function can used for: 
+1) Implicit Return
+2) callback function in iterators such forEach, map, filter.
+
+3) Arrow behaves differently in case of event listeners. 
+
+4) Arrow function behaves very differently inside an object along with "this" keyword. 
+
+DO NOT use Arrow Functions for:
+1)	Object Methods.
+2)	Event handlers.
+3)	Constructor.
+4)	Prototypes.

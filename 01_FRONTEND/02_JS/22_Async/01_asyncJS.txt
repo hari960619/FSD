@@ -1,0 +1,45 @@
+What is Async Javascript? It governs how we perform tasks which take some time to complete. (Ex: Getting data from a database)
+
+Job Queue: The job queue or microtask queue came about with promises in ES6. 
+With promises we needed another callback queue that would give higher priority to promise calls. 
+The JavaScript engine is going to check the job queue before the callback queue. 
+Job Queue gets more priority than the callback Queue.
+
+HTTP Requests:
+1)	Make HTTP requests to get data from another server.
+2)	We make these requests to API endpoints.
+
+One of the simplest example of how to use callbacks is timers. 
+Timers are not part of JS, but they are provided by the browser and Node.js. 
+Function running in parallel with other functions are called asynchronous functions. 
+Here in async, when sync codes are completely executed after that only async code is displayed or performed. 
+
+XML HttpRequest objects are used to interact with the servers and can retrieve data from a URL without having to refresh the full page.
+AJAX is set of web technologies that sends and receives data asynchronously. It does not interfere with the current page.
+JSON has now replaced XML for most part.
+XML: extensible markup language.
+
+Uses of AJAX: 
+1.Make async requests in background.
+2.Fetch data.
+3.Make it interactive.
+
+API : [Application Program Integration]
+1)	API is a contract provided by one piece of software to another. 
+2)	API has structured request and response. 
+
+REST => Representational state Transfer.
+1)	It is an architectural style for designing networked applications. 
+2)	Relies on a stateless, client – server protocol, almost always HTTP.
+3)	Treats server object as resources that can be created or destroyed.
+4)	Can b used virtually by any programming language. 
+5)	All API’s have their own rules and structure.
+
+HTTP Requests [HyperText transfer Protocol]:
+1)	GET: retrieve data from a specified resource. [Important]
+2)	POST: submit data to be processed to a resource. [Important]
+3)	PUT: Update a specified resource.  [Important]
+4)	DELETE: Delete a specified resource. [Important]
+5)	HEAD: same as get but does not return a body just header.
+6)	OPTIONS: Returns the supported HTTP methods.
+7)	PATCH: Update partial resources. 

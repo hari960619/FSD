@@ -1,0 +1,44 @@
+Closures: 
+1)	Just a function returning function.
+2)	Returned function can be named or kept anonymous. 
+3)	No new keyword is required since it does not duplicate and more over it is like a regular function which can be used over and over.
+4)	No this keyword since it is not object, In simple if function returns object instead of function then it is a factory function.
+5)	Assigning variable it depends if it is function statement we have to add in and console.log or else if it is function expression then you can log the expression variable.
+
+Factory Function (ES5):
+1)	We return objects, in simple closure returning object instead of function.
+2)	We can add properties to the created objects like hari.wife to the copied object created and not the original object.
+3)	No use of this keyword, we use let instead, however this is used instead the returned object to connect with variables within the functions.
+4)	No use if new keyword. 
+
+Constructor Function: 
+1)	Constructor function is used to create object.
+2)	In constructor function we use this. Using “this” helps us create a binding with the function but not with the object.
+3)	New keyword is used which does the following things: 
+a.	Creates an empty object.
+b.	Sets the this operator point to the object instance.
+c.	Returns the object from the function implicitly which is not possible in FF.
+d.	The reason we have prototype associated to constructor function is because we can add properties to the constructor prototype just like adding a property to an object. Hence you can’t add the property to the main constructor function because it is a function but you can add it to the prototype since it behaves as an object to the constructor function. Example: Example will be best friend.
+4)	Gotcha with add properties through prototype is that if the value of the prototype is inside the constructor function or in any other prototype linked then it takes president, and if it is in the arguments then that will be given the highest preference. 
+5)	All the elements in the constructor function are true and in prototype are false which means if you check using person.hasOwnproperty you get true for constructor arguments and false for prototype arguments.
+6)	It should be denoted by Capital Letters.
+
+Classes (ES6):
+1)	Constructor function along with prototype is called class.
+2)	It is denoted by capital letter.
+3)	In simple it is an object which has function inside in it.
+4)	The main function should be mentioned as constructor.
+5)	The prototype functions can be mentioned as separate functions below them.
+6)	Even though they are in object kind of type do not add, or ; between the constructor and prototypes.
+
+Static: 
+1)	This is like addition method that is added inside a class which is independent of the class created.
+2)	This needs to be called by the calls name itself and not the newly created object instance using class.
+3)	This cannot access any values mentioned in the class but can use the values which is passed as arguments while involving. 
+4)	Using ‘this’ will be of no help.
+
+SubClasses: 
+1)	Exactly similar to prototype inheritance, while extending make sure you follow the exact constructor parameters in order, if any rearrangement done then the values will also get interchanged. 
+2)	Main key point always try to keep the parameters and this.key name should be the same to avoid confusion, if changing remember the this.key name is the one that needs to be used.
+3)	Important key note: Without the prototype defined with values you cannot access neither the values nor methods inside them. 
+4)	The newly added prototype needs to be added within the class only and not outside like prototype inheritance. 

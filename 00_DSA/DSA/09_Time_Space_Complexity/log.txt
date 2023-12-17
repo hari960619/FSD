@@ -1,0 +1,39 @@
+Example 16: Time Complexity: O(log n)
+Example 18: Time Complexity: O(log n)
+Example 21: Time Complexity: O(log n)
+
+Example 01: Time Complexity: O(n)
+Example 03: Time Complexity: O(n)
+Example 07: Time Complexity: O(n)
+Example 08: Time Complexity: O(n)
+Example 11: Time Complexity: O(n)
+Example 12: Time Complexity: O(n/2) or O(n)
+Example 14: Time Complexity: O(n)
+Example 15: Time Complexity: O(n)
+Example 22: Time Complexity: O(n)
+
+Example 09: Time Complexity: O(n * log n)
+Example 17: Time Complexity: O(n * log n)
+Example 19: Time Complexity: O(n * log n)
+Example 23: Time Complexity: O(n * log n)
+Example 24: Time Complexity: O(m * log n) 
+Example 25: Time Complexity: O(n * log n)
+
+
+Example 05: Time Complexity: O(m * n) 
+Example 10: Time Complexity: O(m * n) 
+Example 20: Time Complexity: O(m * n) 
+
+Example 02: Time Complexity: O(n^2)
+Example 06: Time Complexity: O(n^2)
+Example 13: Time Complexity: O(n^2)
+
+Example 04: Time Complexity: O(2^n)
+
+// GEEKS FOR GEEKS SOLUTION
+
+
+
+
+
+

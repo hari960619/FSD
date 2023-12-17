@@ -1,0 +1,73 @@
+The Version control system helps you manage the changes made to a specific directory or a project over the course of time. 
+
+We cannot test or check our code functionality using version control. All we can do is maintain different versions and collaborate. 
+
+Git is a version control software which is installed in your local system, the file in your system can be shared for collaboration by using a cloud repository, now there are many options to share these files among which one of them is GitHub. 
+
+GitHub is not a part of version control system but a hosting system. 
+
+GitLab and Bitbucket is also a cloud tools using which we can share version controls. 
+
+Git: Client tool (version control)
+GitHub: Hosting server
+
+Some Keywords used while discussing VCS: 
+	1) Remote/ Central/ Master Repository – Present on server/cloud service like GitHub, BitBucket etc., where we can store the main codebase. 
+	2) Local Git Repository: Present on local system where we store all the the changes before pushing to the remote repository. 
+	3) Pushing: Updating remote repository by pushing the newly added versions of the local repository to remote repository. 
+	4) Pulling: Updating the local repository by downloading the newer versions from the remote repository which we added by other collaborators. 
+
+The kernel is a computer program at the core of a computer's operating system and generally has complete control over everything in the system. Operating system connects with Kernel, Kernel connects with hardware. Custom ROM (Oxygen OS can be removed for Color OS).
+
+Are Git and GitHub the same? NO
+	Git: It is an open-source version control tool that is used by programmers for controlling version of their codebase and collaborate with others.
+	GitHub: It is one of the most popular online Git services where we can create remote repositories based on Git. GitHub is an Online server to create a Git based remote repositories. 
+
+Basic Commands in CMD: 
+	1)cd: move to different folder relative to current one.
+	2)cls: Clear the terminal screen.
+	3)del: Delete a file
+	4)dir: list down the content of the current directory.
+	5)mkdir: Create a new folder. 
+	6)move: Move file from one folder to another folder.
+	7)rmdir: Delete a folder. 
+
+To understand how Git works, you need to understand the three states and areas of a Git Project: 
+3 State Files 
+1)	Modified Files, Untracked Files 
+2)	Staged Files 
+3)	Committed Files
+3 Areas 
+1)	The working tree 
+2)	The staging area 
+3)	The Git directory 
+
+(master) is a main or master branch on which all of the development is happening. 
+Why do we need Branching in Git? Scenario: you have a running live website, and you want to add some new features to it. 
+Approach 1: Stop running the website and then make changes to the code in the master codebase. 
+Approach 2: Make changes to the code in the master codebase of the running website. 
+
+Branching: 
+1.	Branching is a Git feature that helps you create new branches.
+2.	You need to create new branches to add or fix changes in the source code, without affecting the main codebase. 
+3.	When you finish making the changes, you can merge those branches with the master branch and update the main codebase.
+
+Q) The git status command indicated the status of: 1) Untracked files 2) Staged files 3) Modified files. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

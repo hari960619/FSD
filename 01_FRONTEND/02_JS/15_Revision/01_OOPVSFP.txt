@@ -1,0 +1,29 @@
+One of the drawbacks to inheritance is that it is based on the fact that it won't change, we tell it what it is. 
+We create a class and give it properties and methods that describe the class.
+But say, down the road, we need to update that class and add more functionality. 
+Adding a new method to the base class will create rippling effects through your entire program. 
+This is the tight coupling problem, things having to depend on one another, 
+which leads to the fragile base class problem, seemingly safe changes cause unforeseen repercussions. 
+It is the opposite of small reusable code. 
+Changing one small thing in either of the class or subclasses could break the program. 
+Another problem is hierarchy where you may need to create a subclass that can only do 1 part of the class, but instead you get everything passed down to it. 
+
+// OOP
+
+1) Tight Coupling problem
+Lets say suppose we are making a change in the main constructor,
+then all the class that gets extended from this base class sees the rippling effect.
+This makes our base constructor fragile.
+
+2) Hierarchy Issue
+Classic jungle banana problem.
+Lets say one of subclass of a subclass will be using just one functionality.
+OOP makes sure that even though this subclass does not use it also they will pushed to it.
+
+3) Lets say in future we realize there should be a different base class then the hierarchy changes.
+
+Composition is probably a better tool to use when creating programs because it creates a more stable environment that is easier to change in the future. 
+The key is to decide which structure is better for your project. 
+You can use ideas from both of these styles to write your code. 
+React uses OOP in class components to extend inheritance and then uses FP in the pure components.
+

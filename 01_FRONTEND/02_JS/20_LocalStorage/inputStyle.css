@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Albert Sans";
+}
+
+h5 {
+  font-family: Montserrat;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+#userForm {
+  width: 60%;
+  margin: 0 auto;
+  background-color: aqua;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#name,
+#email,
+#phNumber,
+#password,
+#passwordRepeat {
+  width: 100%;
+  padding: 3.5px;
+  margin: 5px 0;
+}
+::placeholder {
+  font-family: "Albert Sans";
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+select#country {
+  font-family: "Albert Sans";
+  font-size: 1rem;
+}
+
+#userCountryBlock {
+  width: fit-content;
+  margin: 5px auto;
+}
+
+#userGenderBlock,
+#userHobbiesBlock,
+#userFavColorBlock,
+#userDobBlock,
+#login,
+#logout {
+  text-align: center;
+  margin: 5px 0;
+}
+
+#dob {
+  font-family: "Albert Sans";
+}
+
+#loginTime,
+#logoutTime {
+  font-family: "Albert Sans";
+}
+
+select#amPm {
+  font-family: "Albert Sans";
+  padding: 2.5px;
+}
+
+#userAgeBlock {
+  width: fit-content;
+  padding: 3.5px;
+  margin: 5px auto;
+}
+
+#textArea {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#submitBtn {
+  text-align: center;
+  font-family: "Albert Sans";
+  font-weight: bold;
+  padding: 3.5px;
+  display: block;
+  margin: 0 auto;
+}
+
+h4#error.active {
+  background-color: red;
+  width: fit-content;
+  padding: 5px 5px;
+  border-radius: 2.5px;
+  margin: 3px auto;
+  color: aliceblue;
+  letter-spacing: 1px;
+}
+
+.cen {
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: blueviolet;
+}

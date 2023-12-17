@@ -1,0 +1,288 @@
+UPGRAD:
+a) Introduction to JavaScript
+// Prime Number or Not ?
+// Fibonacci Series.
+// Print all multiples of a num between 1 to 100.
+// Print a new string which concatenate along with its length.
+
+b) Strings 
+// Find how many times a given char (both upper and lower) occur in the input string.
+// Toggle alphabets to Opposite Cases.
+// Check if a given string only contains digits.
+// Write a function to insert a string at the specified position (index) in another string. If the position exceeds the length of the string, append and the end.
+
+c) Coding Questions 
+// Implement a function to validate an email address as per the following rules.
+// Factorial of a number.
+Task: // Given two version numbers A and B, compare them and print 1 || 0 || -1.
+Task: // Write a program to shift all letters in a string by N places in the alphabet.
+
+d) Arrays,Objects & Functions 
+// Write a JavaScript program which takes the string as an input and checks if it is palindrome string or not. 
+// Fibonacci Series using Recursion.
+// Create two arrays from an Object using for in.
+
+e) Arrays,Objects & Functions - Part 2 
+// Remove all duplicates from an array and return the new array.
+// Find all negative numbers in a 2D array of numbers and return the array of all negative numbers as result.
+
+f) Classes in JS
+MCQ's:
+// Which of the following properties can help determine a class’s name?
+// Properties of a class that can only be accessed from within a member function of the class and not externally are called _________.
+// What does the "this" keyword normally refer to within a prototype method?
+// What does the "super" keyword refer to?
+// Which of the following is the output of the code snippet given below?
+// Predict the output of the following code snippet. 
+// Predict the output of the following code snippet. 
+// Predict the output of the following code snippet.
+// Problem Statement: Create a class to represent a circle and accept its radius as user input. Implement a method to calculate the area of the circle.
+// Problem Statement: Create a class to model a task that contains a task description and status as private fields. The status of a task can be one of 'TODO', 'ACTIVE' and 'DONE'. Add getters and setters for the task 'description' and 'status'.
+// Problem Statement: Implement a class to represent a stack data structure for numbers. A stack is a first-in last-out data structure. It should expose three methods:
+1) push: adds an item to the stack
+2) pop: removes an item from the stack. If the stack is empty, calls to pop should return null.
+3) tos (top-of-stack): returns the value at the top of the stack without removing it.
+// Problem Statement: Implement a class with a constructor that takes in a single parameter, a number N. The class exposes a single method: next, which returns the next positive integer starting from N, every time it is called.
+Input Format: A number, can be positive or negative.
+// Problem Statement: Implement a class to represent a queue for numbers. A queue is a first-in first-out data structure. It should expose three methods: enqueue, dequeue and size; the enqueue method adds a value to the queue and the dequeue extracts a value from the queue. If the queue is empty, calls to dequeue should return null, the size method returns the total numbers of elements in the queue.
+Input Format: A list of numbers to add to the queue
+
+g) OOPS in JS
+MCQ's
+// What is the output of the following code? 
+// The following statements is linked to the concept of encapsulation?
+// What is the output of the following code? 
+// What is the output of the following code? 
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+// Ways to achieve inheritance in JavaScript?
+// Which of the following is not valid for fields and methods in a JavaScript class?
+// Problem Statement: Define a class Shape that has a method called perimeter. Extend the Shape class to create two more classes Circle and Rectangle with their own implementation of the perimeter method. Note that the perimeter of a rectangle is 2 * (length + breadth) whereas the perimeter of a circle is 2 * pi * radius.
+Input Format: The length and breadth of a rectangle and the radius of a circle
+// Problem Statement: Define a class for a shopping cart item that has a price attribute. The user will input the name and price of different item and write a program to add these items to a shopping cart class and calculate the total price of these items.
+// Problem Statement(Linked List): Implement a linked list data structure for integers.A linked list is a linear data structure consisting of nodes containing a value and a pointer to the next node. The last node in the chain points to null. Define a class Node with a value and a next attribute. Accept values as user input, construct the linked list and then print the list in a specified way by overriding the toString function of the Node class.
+// Problem Statement: Define a Point class to store x and y coordinates of a point in 2D space.Implement a method getDistance to calculate the distance between this point and another point.The shortest distance between two points (x1, y1) and (x2, y2) is determined by the following formula: square root of ((y1-y2)^2+(x1-x2)^2).
+DID NOT WORK IN UPGRAD WEBSITE // Problem Statement: Create a class that models a bank account. It should accept an initial balance and have methods for debit and credit. It should also expose a method to display the current balance at any time. Input Format: The starting balance of the account and a series of transactions, denoted by Cr for credit and Dr for debit, e.g., Dr 1000
+
+h) Hoisting, Scope and Closure.
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+NEVER KNEW:GPT // Write a curried add function, i.e., a function that can sum any numbers but it can only be invoked with one argument at a time. When called with no arguments it returns the final sum. For example, to add the numbers 1,2,6 and 7 we would invoke the add function like this: add(1)(2)(6)(7)()
+
+// Callbacks
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+// What is the output of the following code?
+// Ways to achieve inheritance in JavaScript?
+// Which of the following is not valid for fields and methods in a JavaScript class?
+// What is the output of the following code?
+
+
+// ES6 - |
+// Write a function that takes a variable number of numeric arguments and returns their mean (average)
+// Implement a Triangle class that has the three sides as properties. Add a derived property 'type' on it as a getter which returns the type of the triangle, i.e., equilateral, isosceles or scalene. An equilateral triangle is one with all the three sides equal, an isosceles triangle has any two sides equal, and a scalene triangle has all three sides of different lengths.
+// Write a function that takes in an object as a parameter and inverts the object, i.e., the keys and values of the object are interchanged.
+// Problem Statement: Write a function that accepts the following parameters: the name of a property, a variable number of objects and returns an array with the values corresponding to that property in each object provided.
+
+
+
+
+
+
+
+
+
+
+
+/* // Promises and Date
+//Which of the following is the output of the code snippet given below?
+Promise.reject(2)
+  .then(
+    (value) => console.log("Fulfilled " + value),
+    (value) => console.log("Rejected " + value)
+  )
+  .catch((value) => console.log("Catch " + value));
+// Rejected 2
+// Promise.reject(2) creates a promise that is immediately rejected with the value 2.
+// The .then() method takes two callback functions as arguments. The first function is for handling fulfillment, and the second function is for handling rejection. In this case, the promise is rejected, so the second callback is executed.
+// The second callback logs 'Rejected ' + value, where value is the rejected value, which is 2. So, it logs 'Rejected 2'.
+
+Promise.reject(2)
+  .then(
+    (value) => console.log("Fulfilled " + value),
+    (value) => {
+      console.log("Rejected " + value);
+      throw 3;
+    }
+  )
+  .catch((value) => console.log("Catch " + value));
+// Rejected 2
+// Catch 3
+// The failure callback passed to the then method itself throws an error, which gets handled by the catch method.
+
+console.log(typeof Date.now()); // number
+
+console.log(typeof Date()); // number
+
+// ES6
+function fun(a = 23) {
+  a = a || 32;
+  console.log(a);
+}
+fun(); // 23, we haven't passed any argument while calling the function fun(), the default value of the parameter 'a' has been specified as 23, which gets logged in the console.
+
+const obj7 = {
+  x: 42,
+};
+const arr = [obj7];
+const newArr = [...arr];
+console.log(newArr[0] === obj7); //true: The spread operator copies the elements of an array into another, but does not deep clone the elements themselves; hence, the same object that is present in arr is also copied over to newArr.
+
+function f(a, ...args) {
+  console.log(args.length);
+}
+f(1); //0 :Since the function is called with a single argument, the args array is empty; hence, its length is zero.
+
+const a5 = {
+  x: 1,
+};
+const b5 = {
+  a5,
+};
+const c5 = Object.assign({}, b5);
+console.log(c5.a5 === b5.a5); //true: The output is true since Object.assign does not perform a deep copy; rather, it just copies the top-level properties of an object. Therefore, the reference to the object 'a' stays the same across a and b.
+
+// ES6 - |
+// Write a function that takes a variable number of numeric arguments and returns their mean (average)
+function mean(...nums) {
+  let sum = 0;
+  for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+  }
+  return sum / nums.length;
+}
+
+// Implement a Triangle class that has the three sides as properties. Add a derived property 'type' on it as a getter which returns the type of the triangle, i.e., equilateral, isosceles or scalene. An equilateral triangle is one with all the three sides equal, an isosceles triangle has any two sides equal, and a scalene triangle has all three sides of different lengths.
+class Triangle {
+  constructor(a, b, c) {
+    this.a = a;
+    this.b = b;
+    this.c = c;
+  }
+  get type() {
+    if (this.a === this.b && this.b === this.c) {
+      return "equilateral";
+    } else if (this.a === this.b || this.b === this.c || this.a === this.c) {
+      return "isosceles";
+    } else {
+      return "scalene";
+    }
+  }
+}
+
+// Write a function that takes in an object as a parameter and inverts the object, i.e., the keys and values of the object are interchanged.
+
+function invert(obj) {
+  let regObj = JSON.parse(JSON.stringify(obj));
+  let newObj = {};
+  for (let key in regObj) {
+    let value = regObj[key];
+    newObj[value] = key;
+  }
+  return JSON.parse(JSON.stringify(newObj));
+}
+console.log(invert({ a1: "b1", a2: "b2", a3: "b3" }));
+
+// Problem Statement: Write a function that accepts the following parameters: the name of a property, a variable number of objects and returns an array with the values corresponding to that property in each object provided.
+
+function pluck(propName, ...objects) {
+  let valuesArray = [];
+  let objArray = JSON.parse(JSON.stringify(objects));
+  for (let obj of objArray) {
+    // console.log(obj)
+    if (obj.hasOwnProperty(propName)) {
+      valuesArray[valuesArray.length] = obj[propName];
+    }
+  }
+  return valuesArray;
+}
+
+// pluck(
+//   "name",
+//   { name: "Ravi", city: "Bangalore" },
+//   { name: "Rakesh", city: "Mumbai" },
+//   { name: "Anant", city: "Gurgaon" }
+// );
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

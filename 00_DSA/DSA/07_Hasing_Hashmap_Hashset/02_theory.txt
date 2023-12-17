@@ -1,0 +1,84 @@
+Certainly! Let's explore the concepts of Set, HashMap, HashSet, and hashing in JavaScript with examples:
+
+**Set:**
+A Set is a built-in JavaScript data structure that stores a collection of unique values. It ensures that each value appears only once in the collection.
+
+// Creating a Set
+let mySet = new Set();
+
+// Adding elements to the Set
+mySet.add(10);
+mySet.add(20);
+mySet.add(10); // Adding a duplicate value, which will be ignored
+
+// Checking the size of the Set
+console.log(mySet.size); // Output: 2
+
+// Iterating through the Set
+mySet.forEach(value => {
+  console.log(value);
+});
+// Output:
+// 10
+// 20
+
+**HashMap (or Map):**
+A HashMap, often referred to as a Map in JavaScript, is a key-value data structure that allows you to associate values (data) with keys (unique identifiers).
+
+// Creating a Map
+let myMap = new Map();
+
+// Adding key-value pairs to the Map
+myMap.set('name', 'John');
+myMap.set('age', 30);
+
+// Retrieving values by key
+console.log(myMap.get('name')); // Output: John
+console.log(myMap.get('age'));  // Output: 30
+
+**HashSet (Not a Built-in Structure in JavaScript):**
+A HashSet is not a native JavaScript data structure, but it's a term commonly used in other programming languages like Java. It refers to a collection of unique values similar to a Set. In JavaScript, you can achieve the same functionality using a Set.
+
+// Creating a "HashSet" (Set) in JavaScript
+let myHashSet = new Set();
+
+// Adding elements to the "HashSet" (Set)
+myHashSet.add(10);
+myHashSet.add(20);
+myHashSet.add(10); // Adding a duplicate value, which will be ignored
+
+// Checking the size of the "HashSet" (Set)
+console.log(myHashSet.size); // Output: 2
+
+// Iterating through the "HashSet" (Set)
+myHashSet.forEach(value => {
+  console.log(value);
+});
+// Output:
+// 10
+// 20
+
+**Hashing:**
+Hashing is a technique used to convert data (e.g., a key) into a fixed-size string or number (hash code). Hashing is commonly used in data structures like hash tables (HashMaps) to store and retrieve values efficiently based on their keys.
+
+Here's a simple hashing example in JavaScript:
+
+// Hash function to compute a hash code for a string
+function hashString(str) {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = (hash << 5) - hash + char;
+  }
+  return hash;
+}
+
+// Using the hash function
+const key = 'name';
+const hashCode = hashString(key);
+
+console.log(`Hash code for "${key}": ${hashCode}`);
+
+In this example, the `hashString` function computes a hash code for a given string by iterating through its characters and performing a simple calculation. Hash codes help map keys to specific locations in data structures like HashMaps, allowing for efficient data retrieval.
+
+Keep in mind that JavaScript provides built-in Set and Map data structures, making it easy to work with collections of unique values and key-value pairs without having to implement hashing functions manually in most cases.

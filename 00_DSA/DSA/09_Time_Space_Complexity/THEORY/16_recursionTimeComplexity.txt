@@ -1,0 +1,19 @@
+// Recurrence Relation
+
+function fun1(n){
+    if(n<=0) return;
+    for(i=0;i<=n,i++{
+        clg("Hi")
+    }
+    fun1(n/2);
+    fun1(n/3);
+}
+Time Complexity would be: T(n/2) + T(n/3) + Θ(1) + Θ(n);
+
+function fun2(n){
+    if(n===1) return;
+    clg("Hi")
+    fun1(n-1);
+}
+Time Complexity would be: T(n-1) + Θ(1);
+

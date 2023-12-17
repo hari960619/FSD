@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Didact Gothic";
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: Montserrat;
+}
+
+#sub-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Montserrat;
+}
+
+.bg {
+  background-color: green;
+}
+
+.color {
+  color: blue;
+}
+
+#regFun,
+#arrowFun,
+#test {
+  font-size: 2rem;
+  display: block;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 5px;
+}

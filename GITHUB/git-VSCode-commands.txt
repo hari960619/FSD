@@ -1,0 +1,90 @@
+// Initializing an empty repository i.e., the folder gets converted into a repository.
+==> git init (It works on an existing folder too)
+
+// Before we push the changes from the local Git repo to the remote Git repo, 
+// We have to create a remote Git repository 
+// Establish connection between local Git repo and remote Git repo. 
+==> git remote add origin <repo link>
+
+// Configuring the username and email ID to the folder.
+==> git config --global user.name "hari960619"
+==> git config --global user.email "haridir150@gmail.com"
+
+// Checking if the configuration worked properly.
+==> git config user.name
+==> git config user.email
+
+// Adding all files in one command 
+==> git add . || git add -all
+
+// Committing all the staged files with the given commit message.
+==> git commit -m "<message>"
+
+// Pushing code to the Remote repository
+==> git push origin master
+
+// Getting details of all the commits: 
+==> git log || git log --all 
+
+// Getting details of last ‘n’ number of commits 
+==> git log -n <number>
+
+// Getting details of the commits made by “name” 
+==> git log –committer “<name>”
+
+// Getting details about each commit in one line 
+==> git log --oneline
+
+// Clear VS Code Terminal
+==> cls
+
+// List of files in the directory 
+==> ls 
+
+// To get the present repo 
+==> git ls-remote --get-url origin
+
+// After making changes in one file and want to update that file in remote repo
+// 1) You can add all files or just that one file i.e., 
+//      ==> All files: git add .
+//      ==> One file: git add <fileName>
+// 2) Commit the files by giving appropriate message.
+//      ==> git commit -m "some message"
+// 3) Then push the code.
+//      ==> git push origin master
+
+Branching Commands: 
+
+// The process of creating a branch is: 
+// 1) create a branch: git branch <branchName>
+// 2) check all the branches available to confirm creation of new branch: git branch
+// 3) checkout into the new branch: git checkout <branchName>
+// 4) add the files: git add .
+// 5) commit the files: git commit -m <message>
+// 6) push the files to the branch: git push origin <branchName>
+
+// Getting all the branch in the repo. If no branches then it shows only the master branch.
+==> git branch
+
+// Adding a new branch. This new branch can be seen using the git branch command. The * symbol indicates the branch we stand in.
+==> git branch <branchName> 
+
+// Navigation between branches. 
+// It is used to create and simultaneously checkout the new branch. 
+// Used to move to a previous version in the same branch.
+==> git checkout <branchName>
+
+// Deletes the branch. 
+==> git branch -d dev (Make sure while deleting you should be in the master branch)
+
+// Merging it with the master branch. 
+==> git merge <branchName> (Make sure while merging you should be in the master branch)
+
+// In general, the master of local repo is linked with master of cloud repo, using this command the new branchName from the local also gets linked with the cloud repo. This will help us in case of error or any mismatching.
+==> git push –set-upstream origin <branchName>
+
+Cloning: 
+==> git clone <repo link>
+
+Pulling: 
+==> git pull 

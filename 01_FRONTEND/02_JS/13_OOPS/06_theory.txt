@@ -1,0 +1,17 @@
+There are 2 basic philosophies when it comes to how you structure your programs, object oriented and functional. 
+Each style has its use in programming, it is not one over the other, but merely a preference in style.
+
+In all programs, there are two primary components the data. 
+That is the stuff that we keep in our memory and the behaviour, the things that the programs can do, the functions. 
+And in order for us to deal with that, to organize things like that, well, we initially had languages, 
+let's say like Java like scheme that had different ideas of what we can do. 
+And we learn how Java and scheme where the inspiration of JavaScript.
+
+JavaScript was created using Scheme and Java. 
+Scheme focused more on Functions and Java focused more on Objects. 
+Hence Javascript was created by using the best of both worlds. 
+Object oriented programming says that bringing together the data and its behavior in a single location called an object and containing all of that in a box, 
+makes it easier to understand how our programs work.
+
+Functional Programming says that data and behavior are distinctly different things and should be kept separate for clarity. 
+So perhaps instead of having a one giant box to describe everything, we have multiple boxes.

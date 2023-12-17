@@ -1,0 +1,56 @@
+// Linear Search using "for" loop.
+// Linear Search using "recursion".
+
+// Binary search Using "for" loop.
+    // a) Ascending order Binary Search.
+    // b) Descending order Binary Search.
+
+// Binary search Using "recursion".
+    // a) Ascending order Binary Search.
+    // b) Descending order Binary Search.
+
+// First Occurrence of a num.
+    // a) Using "for" loop.
+    // b) Using "recursion".
+
+// Last Occurrence of a num.
+    // a) Using "for" loop.
+    // b) Using "recursion".
+
+// Occurrence count of a num.
+    // a) Using "for" loop.
+    // b) Using "recursion".
+
+// Square root of a number. If the number is not a perfect square, find the floor value.
+    // a) Using "for" loop without Binary Search.
+    // b) Using "for" loop with Binary Search.
+    // c) Using "recursion".
+
+// GEEKS FOR GEEKS
+
+// Given an integer array and another integer element. 
+The task is to find if the given element is present in array or not.
+
+// Given an array arr[] sorted in ascending order of size N and an integer K. Check if K is present in the array or not. 
+If present print 1 else print -1.
+
+// Given a sorted array of integers of size N and a number X. 
+Find the leftmost index of X in the array arr[].
+
+// Given a binary sorted non-increasing array of 1s and 0s. 
+You need to print the count of 1s in the binary array.
+Input:
+N = 8
+arr[] = {1,1,1,1,1,0,0,0}
+Output: 5
+Explanation: Number of 1's in given 
+binary array : 1 1 1 1 1 0 0 0 is 5.
+Example 2:
+Input:
+N = 8
+arr[] = {1,1,0,0,0,0,0,0}
+Output: 2
+Explanation: Number of 1's in given 
+binary array : 1 1 0 0 0 0 0 0 is 2.
+Your Task:
+The task is to complete the function countOne() which takes the array arr[] and its size N as inputs and returns the count of 1s in the input array.

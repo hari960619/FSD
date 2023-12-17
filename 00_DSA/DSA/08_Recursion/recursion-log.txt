@@ -1,0 +1,365 @@
+Kunal Kushwaha
+Basic 
+// 01) Print numbers from 5 to 1.
+
+// 02) Print numbers from 1 to 5.
+
+// 03) Print Both ways at once from 1 to 5.
+
+// 04) Factorial of a number.
+
+// 05) Sum of n digits.
+
+// 06) Sum of the numbers of the given digits.
+
+// 07) Sum of the numbers of the given digits.
+
+// Passing Numbers to the function. (THEORY)
+
+[DO THIS AGAIN] // 08) Reverse the digits in the number. 
+        // Solution A
+        // Solution B
+// 09) Check for Palindrome [Extension of reverse]
+[DO THIS AGAIN] // 10) Count the number of zeros in the number.
+        // Solution A
+        // Solution B
+
+// 10) Count the number of zeros in the number.
+
+// 11) Given an integer "num" , return the number of steps to reduce it to zero.In one step, if the current number is even, you have to divide it by 2 , otherwise, you have to subtract 1 from it.
+
+CHATGPT PROBLEMS
+
+// 12) Find the Factorial of a num.
+
+// 13) Calculate the fibonacci Number.
+
+[DO THIS AGAIN] // 14) Compute the sum of elements of an array of numbers.
+
+[DO THIS AGAIN] // 15) Compute the sum of elements of an Nested array of numbers.
+
+// 16) Reverse a string.
+
+[DO THIS AGAIN] // 17) Write a recursive function to find the greatest common divisor (GCD) of two numbers.
+
+// 18) Implement a recursive function to check if a given string is a palindrome.
+
+// 19) Write a recursive function to generate all permutations of a string.
+
+// 20) Calculate the power of a number (x^n) using recursion.
+
+// 21) Implement a recursive function to check if a number is even or odd.
+
+// 22) Find the nth term of the geometric series (a, ar, ar^2, ...) using recursion.
+
+// 23) Write a recursive function to find the sum of digits of a positive integer.
+
+// 24) Implement a recursive function to count the number of vowels in a string.
+
+// 25) Calculate the nth triangular number using recursion.
+
+// 26) Write a recursive function to calculate the sum of all elements in a nested array.
+
+// 27) Implement a recursive function to solve the binary search problem in a sorted array.
+
+// 28) Generate all possible subsets of a set using recursion.
+
+// 29) Find the length of a linked list using recursion.
+
+// 30) Write a recursive function to solve the Josephus problem.
+
+// 31) Implement a recursive function to find the nth prime number.
+
+// 33) Create a recursive function to calculate the result of raising a number to a power.
+
+// 34) Generate all possible subsets of a given set using recursion.
+
+// 32) Solve the Tower of Hanoi problem with a given number of disks.
+
+// 33) Given an array of positive integers and a target sum, find all unique combinations of integers in the array that sum up to the target using recursion.
+
+// GEEKS FOR GEEKS
+
+1) Print numbers from 1 to N without the help of loops.
+Example 1:
+Input:
+N = 10
+Output: 1 2 3 4 5 6 7 8 9 10
+Example 2:
+Input:
+N = 5
+Output: 1 2 3 4 5
+
+2) You are given a number n. You need to find nth Fibonacci number.
+F(n)=F(n-1)+F(n-2); where F(1)=1 and F(2)=1
+Example 1:
+Input:
+n = 1
+Output: 1
+Explanation: The first fibonacci
+ number is 1
+Example 2:
+Input:
+n = 20
+Output:6765
+Explanation: The 20th fibonacci 
+number is 6765
+
+3) You are given a number n. You need to find the count of digits in n.
+Example 1:
+Input:
+n = 1
+Output: 1
+Explanation: Number of digit in 1 is 1.
+Example 2:
+Input:
+n  = 99999
+Output: 5
+Explanation:Number of digit in 99999 is 5
+
+4) Given a number and its reverse. Find that number raised to the power of its own reverse.
+Note: As answers can be very large, print the result modulo 109 + 7.
+Example 1:
+Input:
+N = 2, R = 2
+Output: 4
+Explanation: The reverse of 2 is 2 and after raising power of 2 by 2 we get 4 which gives remainder as 4 when divided by 1000000007.
+Example 2:
+Input:
+N = 12, R = 21
+Output: 864354781
+Explanation: The reverse of 12 is 21and 1221 when divided by 1000000007 gives remainder as 864354781.
+
+5) You are given a number n. You need to find the digital root of n. DigitalRoot of a number is the recursive sum of its digits until we get a single digit number.
+Example 1:
+Input:
+n = 1
+Output:  1
+Explanation: Digital root of 1 is 1
+Example 2:
+Input:
+n = 99999
+Output: 9
+Explanation: Sum of digits of 99999 is 45
+which is not a single digit number, hence
+sum of digit of 45 is 9 which is a single
+digit number.
+
+Lucky numbers are subset of integers. Rather than going into much theory, let us see the process of arriving at lucky numbers,
+Take the set of integers
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,……
+First, delete every second number, we get following reduced set.
+1, 3, 5, 7, 9, 11, 13, 15, 17, 19,…………
+Now, delete every third number, we get
+1, 3, 7, 9, 13, 15, 19,….….
+Continue this process indefinitely……
+Any number that does NOT get deleted due to above process is called “lucky”.
+
+6) You are given a number N, you need to tell whether the number is lucky or not. If the number is lucky return 1 otherwise 0.
+Example 1:
+Input:
+N = 5
+Output: 0
+Explanation: 5 is not a lucky number 
+as it gets deleted in the second 
+iteration.
+Example 2:
+Input:
+N = 19
+Output: 1
+Explanation: 19 is a lucky number because 
+it does not get deleted throughout the process.
+
+// UPGRAD
+
+
+
+
+
+
+
+Recursion is a fundamental concept in computer science and is used in various data structures and algorithms. Here are some other types of data structures and concepts that often involve recursion:
+
+1. **Trees:**
+   - **Binary Trees:** Binary trees are a common data structure where each node has at most two children. Recursive algorithms are frequently used for tree traversal (e.g., in-order, pre-order, and post-order traversal).
+   - **Binary Search Trees (BST):** BSTs are binary trees with a specific ordering property. Recursive operations like insertion, deletion, and searching are common.
+   - **Balanced Trees:** Recursive data structures like AVL trees and Red-Black trees are used for balancing binary search trees to maintain efficient operations.
+
+2. **Graphs:**
+   - **Graph Traversal:** Recursive depth-first search (DFS) and breadth-first search (BFS) algorithms are used for traversing graphs.
+   - **Spanning Trees:** Recursive algorithms like Prim's and Kruskal's are used to find minimum spanning trees in graphs.
+
+3. **Linked Lists:**
+   - Recursive algorithms can be used for operations like reversing a linked list, merging two sorted linked lists, or finding the middle of a linked list.
+
+4. **Heaps:**
+   - Recursive algorithms are used in heap data structures for maintaining the heap property, such as heapify or sift-up/sift-down operations.
+
+5. **Dynamic Programming:**
+   - Recursive algorithms are often used to solve optimization problems through dynamic programming. Problems like the Fibonacci sequence, coin change, and the knapsack problem can be solved recursively.
+
+6. **Backtracking:**
+   - Backtracking algorithms solve problems by trying out different possibilities recursively, such as the N-Queens problem or Sudoku.
+
+7. **Trie (Prefix Tree):**
+   - Tries are tree-like structures used for efficient string storage and retrieval. Recursive operations are common in trie implementations.
+
+8. **Heap Sort and Merge Sort:**
+   - Both of these sorting algorithms use recursion as part of their divide-and-conquer approach.
+
+9. **Recursion Schemes:**
+   - Recursion schemes, like catamorphisms, anamorphisms, and hylomorphisms, are used to generalize recursive patterns for various data structures.
+
+10. **Fractals:**
+    - Recursive drawing algorithms like the Koch snowflake and Sierpinski triangle are examples of using recursion to generate complex shapes.
+
+These are just a few examples of how recursion is employed in various data structures and algorithms. Recursion is a powerful tool for solving complex problems and managing hierarchical data structures, making it a fundamental concept in computer science and programming.
+
+// MEDIUM LEVEL = 25
+
+Certainly! Here are 15 medium-level difficulty problems based on recursion that do not directly involve the previously mentioned data types:
+
+**1. Permutations with Duplicates:**
+   Write a recursive function to generate all unique permutations of a string that may contain duplicate characters.
+
+**2. Combinations of a Number:**
+   Given a positive integer `n`, find all unique combinations of positive integers that sum up to `n` using recursion.
+
+**3. Tower of Hanoi with Four Rods:**
+   Extend the Tower of Hanoi problem to use four rods instead of three.
+
+**4. Parentheses Balancing:**
+   Write a recursive function to determine if a given string of parentheses is balanced (i.e., every opening parenthesis has a corresponding closing parenthesis).
+
+**5. Subset Sum:**
+   Given an array of integers and a target sum, find all subsets of the array that sum up to the target using recursion.
+
+**6. Palindromic Partitions:**
+   Generate all possible palindrome partitions of a given string using recursion.
+
+**7. Combination Lock:**
+   Write a recursive function to find the minimum number of moves required to open a combination lock with a sequence of digits.
+
+**8. Sudoku Solver:**
+   Implement a Sudoku solver using recursion to fill in the missing numbers while adhering to Sudoku rules.
+
+**9. N-Queens Problem:**
+   Find all solutions to the N-Queens problem using recursion. Place N queens on an N×N chessboard such that no two queens threaten each other.
+
+**10. Subset of Elements:**
+    Given an array of distinct integers, find all subsets of the array using recursion.
+
+**11. String Decomposition:**
+    Given a string and a dictionary of words, recursively decompose the string into valid word segments.
+
+**12. Count Palindromic Substrings:**
+    Write a recursive function to count the number of palindromic substrings in a given string.
+
+**13. K-Coloring of Graph:**
+    Determine if a given graph can be colored using at most K colors, where K is a positive integer.
+
+**14. Find Longest Increasing Subsequence:**
+    Find the longest increasing subsequence of a given array using recursion.
+
+**15. All Paths in a Grid:**
+    Given a grid with obstacles, find all possible paths from the top-left to the bottom-right corner using recursion.
+
+Certainly! Here are another 10 more medium-level difficulty problems based on recursion:
+
+**1. Combinations with Duplicates:**
+   Write a recursive function to find all unique combinations of a set of numbers (with duplicates) that sum up to a target value.
+
+**2. Parentheses Expressions:**
+   Given a positive integer `n`, generate all valid combinations of `n` pairs of parentheses using recursion.
+
+**3. Word Break Problem:**
+   Given a string and a dictionary of words, determine if the string can be segmented into a space-separated sequence of dictionary words using recursion.
+
+**4. Combination Sum II:**
+   Given a collection of candidate numbers and a target sum, find all unique combinations of candidates that sum to the target, with each number used at most once.
+
+**5. Generate Gray Codes:**
+   Generate all possible Gray codes of length `n` using recursion. Gray codes are binary sequences where consecutive numbers differ in only one bit.
+
+**6. Combination of Phone Keypad:**
+   Given a string of digits representing a phone number, find all possible letter combinations that the number could represent according to a phone keypad.
+
+**7. Balanced Binary Trees:**
+   Write a recursive function to check if a binary tree is height-balanced (i.e., the heights of the two subtrees of any node never differ by more than 1).
+
+**8. Path Sum III:**
+   Given a binary tree and a sum, find all paths in the tree that sum to the given target value using recursion.
+
+**9. Sudoku Solver with Backtracking:**
+   Implement a Sudoku solver using backtracking and recursion to fill in the missing numbers while adhering to Sudoku rules.
+
+**10. Maze Solver:**
+    Given a maze with walls and open paths, find a path from the start to the finish using recursion.
+
+These additional medium-level recursive problems cover a variety of domains, including combinatorics, string processing, tree and graph algorithms, and puzzle-solving. They offer opportunities to further enhance your recursive problem-solving skills.
+
+// HARD - LEVEL = 20
+
+Certainly! Here are 20 challenging and difficult recursion questions:
+
+**1. Tower of Hanoi with N Rods:**
+   Extend the Tower of Hanoi problem to use N rods instead of three.
+
+**2. Subset Sum with Target Count:**
+   Given an array of positive integers and a target sum, find all subsets of a specific size that sum up to the target using recursion.
+
+**3. Permutations with Restrictions:**
+   Generate all permutations of a string where certain characters cannot be adjacent to each other (e.g., "aab").
+
+**4. Combination Sum III:**
+   Given an array of candidate numbers and a target sum, find all unique combinations of candidates that sum to the target with a fixed number of elements.
+
+**5. All Possible Parentheses:**
+   Write a recursive function to generate all possible combinations of parentheses that can be used to enclose a given number of expressions.
+
+**6. Sudoku Solver (Harder Variant):**
+   Implement a more challenging Sudoku solver using recursion and additional constraints.
+
+**7. Knight's Tour:**
+   Find a solution to the Knight's Tour problem, where a knight on a chessboard must visit every square exactly once.
+
+**8. N-Queens with Unique Solutions:**
+   Find all unique solutions to the N-Queens problem without generating equivalent solutions.
+
+**9. Palindrome Partitioning II:**
+   Find the minimum number of cuts required to partition a string into palindromic substrings using recursion.
+
+**10. Maze Solver with Multiple Paths:**
+    Solve a maze with multiple paths, finding all possible paths from start to finish using recursion.
+
+**11. Maximum Path Sum in a Binary Tree:**
+    Find the maximum path sum in a binary tree, where the path can start and end at any node.
+
+**12. Longest Increasing Subarray:**
+    Find the longest subarray in an array of integers where the elements are in strictly increasing order using recursion.
+
+**13. Generate All Valid IP Addresses:**
+    Given a string of digits, generate all valid IP addresses it can represent (e.g., "25525511135" can be split into "255.255.11.135" and "255.255.111.35").
+
+**14. Decode Ways:**
+    Given a string containing digits, determine the total number of ways to decode it into letters using recursion.
+
+**15. Find Largest Subarray with Equal 0s and 1s:**
+    Find the largest subarray of an array with an equal number of 0s and 1s using recursion.
+
+**16. Shortest Path in 2D Grid:**
+    Find the shortest path from the top-left corner to the bottom-right corner in a 2D grid with obstacles using recursion.
+
+**17. Unique Paths with Obstacles:**
+    Calculate the number of unique paths from the top-left to the bottom-right corner in a 2D grid with obstacles using recursion.
+
+**18. Find Minimum Edit Distance:**
+    Find the minimum edit distance (Levenshtein distance) between two strings using recursion.
+
+**19. Generate All Possible Trees:**
+    Generate all possible unique binary search trees that can be formed using a set of distinct integers.
+
+**20. String Interleaving:**
+    Determine if a given string can be formed by interleaving two other strings, maintaining the relative order of characters, using recursion.
+
+These difficult and challenging recursion questions cover a wide range of topics and problem-solving techniques. They are designed to test your deep understanding of recursion and your problem-solving skills.

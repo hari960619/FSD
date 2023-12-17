@@ -1,0 +1,49 @@
+// git init: creates a repository or turns the folder into a repository. 
+// git config --global user.name "hari960619" : user name gets added. 
+// git config --global user.email haridir150@gmail.com: user email gets added.
+// $ git config user.name: gives the user name attached. 
+// $ git config user.email: gives the user name attached.
+// cd: comes out of the master after which we can use cd desktop. 
+// clear: clears everything
+// vim accounts.txt : creates a accounts text file.
+// Some keys used to write inside the text file i.e., 
+        a.	insert key button: allows us to type.
+        b.	esc: comes out of the file. 
+        c.	wq: saves the file with the changes. 
+// ls or dir: both gives the list of files in that folder. 
+// git status: gives us the details of tracked and untracked files. 
+// git status -s: It gives only list the files untracked files with “?” mark. 
+// In the short status, each file is appended with a symbol in the form of XY. Where X shows the status of staging area and Y shows the status of working tree. 
+Different symbols: 
+    “” – Unmodified 
+    M – Modified  
+    A – Added 
+    ?? – Untracked 
+    Sometimes different combinations can be seen: 
+        A – Added to staging area and not modified (tracked + staged) 
+        AM – Added to staging area but again modified (tracked + not staged) 
+// git add <fileName1><fileName1> - Used to stage the two files named fileName1 and fileName2 
+// git add –all or git add .  Used to move all the files to the staging area.
+// git commit -m <message>: commits all the staged files with the given commit message.
+// Git commit -a -m <message>: Used to stage all the tracked files and commit them with the give message. This command lets you skip the step of executing git add command. We cannot commit an untracked file. 
+// git log --all OR git log: shows details of all the commits 
+// git log -n: shows details of last ‘n’ number of commits (git log -1/-2)
+// git log –committer “<name>”: shows details of the commits made by “name” 
+// git log –oneline: shows details about each commit in one line 
+Before we push the changes from the local Git repo to the remote Git repo, first we have to create a remote Git repository and establish connection between local Git repo and remote Git repo. 
+While creating a Git repository, you need to add a remote/cloud-based repository for the following purposes: 
+    1)	To keep a copy of the source code available at any time or location.
+    2)	To collaborate with team members and other programmers across multiple locations. 
+// git remote add origin <SSH or HTTPS URL>
+// git remote add origin https://github.com/hari960619/delMe.git
+This command adds a new remote location with the name ‘origin’ and connects to the given link of the remote repository. We can add several remote repositories to our local Git repository.
+
+Command -git push: 
+    1)	Used to update all the changes from local Git Repository to the remote sever/ repository, which can later be fetched by other collaborators.  
+    2)	Used to push/save changes (additions, modifications, deletions) in a remote repository. 
+// git push origin master: Used to push the code to remote repo “origin’ and the branch ‘master’.
+// git push -u origin master: Same as previous command, except add upstream(-u) so all subsequent push can be done using just the git push command.
+// git push: Used to push the code to the remote repo, the details of which are being set using the previous command (second bullet point) 
+
+Just in case while pushing the code to cloud repo if the git asks for username and password:
+settings > developer settings > tokens (classic) > generate token (classic) > (select all the check boxes, give the expiration date and generate token) > (now while pushing if git asks for username and password)? > (now give your username and this token value as password in git). 

@@ -1,0 +1,158 @@
+React is responsible for managing the components data and state and it re-evaluates a component whenever a state changes.
+
+Both component and state is maintained by react.
+
+React also compares and checks the difference between the previous state and current state and passes the information to React DOM.
+React is not responsible for rendering something in browsers DOM?
+React handovers all the changes to ReactDOM, reactDOM is the interface to the web which is responsible in working with real DOM(Browser DOM).
+
+React creates a virtual DOM in the memory. The virtual DOM is an exact replica of the real DOM. Now whenever there is a change in the state of a element the virtual DOM gets updated. 
+    Once the virtual DOM is updated, there is comparison done with the virtual DOM and real DOM. All the changes will be made. If no change in an element then those remain the same.
+
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces. 
+It lets you compose complex UI's from small and isolated pieces of code called components.
+
+First of all, React is feature rich JavaScript library, which comes with a lot of utility codes that can be re-used in your application.
+Second, it divides the Ul into several small building blocks called as component, and these components can be developed separately and are independent of each other.
+In this way, it is more maintainable and easily testable.
+The code which we write to implement a functionality with JavaScript, is drastically reduced when we write same functionality with React. 
+In this way, development becomes faster and more productive.
+
+Single page application is a web application, which has only one HTML page.
+When we navigate around in the application, the content of that HTML file changes. The Page itself never changes.
+
+IMPORTANT POINT: a component needs to re-render when an event occurs like a submit or state change. Not when the component gets reloaded. 
+
+Advantage:
+    Since we are using JavaScript to change the content of the page, it is much faster.
+    Here we are not reaching out to the server to request a new piece of HTML data, every time we navigate to a different URL.
+    This allows us to create an application which is fast and reactive.
+
+Summary: 
+    They allow you to use React features without having to write a class.
+    Avoid the whole confusion with 'this' keyword.
+    Allow you to reuse stateful logic.
+    Organize the logic inside a component into reusable isolated units.
+
+Rules of Hooks
+    "Only Call Hooks at the Top Level" : Don't call Hooks inside loops, conditions, or nested functions.
+    "Only Call Hooks from React Functions": Call them from within React functional components and not just any regular JavaScript function.
+
+useState
+    useState does not manually merge the object, we have to copy the entire object and then update the new values.
+    The useState hook lets you add state to functional components
+    In classes, the state is always an object.
+    With the useState hook, the state doesn't have to be an object.
+    The useState hook returns an array with 2 elements.
+    The first element is the current value of the state, and the second element is a state setter function.
+    New state value depends on the previous state value? You can pass a function to the setter function.
+    When dealing with objects or arrays, always make sure to spread your state variable and then call the setter function.
+
+useEffect
+    The Effect Hook lets you perform side effects in functional components.
+    It is a close replacement for componentDidMount, componentDidUpdate and componentWillUnmount.
+    In the second parameter of a the useEffect hook we can pass both props and states to be monitored.
+
+useContext 
+    Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+useReducer
+    useReducer is a hook that is used for state management
+    It is an alternative to useState
+    What's the difference? useState is built using useReducer
+    When to useReducer vs useState?
+
+Hooks so far: 
+    useState — state
+    useEffect — side effects
+    useContext — context API
+    useReducer reducers
+
+reducer in JavaScript
+    array.reduce(reducer,initialValue).
+    returns a singleValue i.e., reducer(accumulator,itemValue).
+    reduce method returns a single value.
+
+useReducer in React
+    useReducer (reducer, initialState ).
+    returns a newState i.e., reducer(currentState , action).
+    useReducer returns a pair of values i.e., [newState, dispatch].
+
+Scenario
+    Type of state
+        useState : Number, String, Boolean
+        useReducer : Object or Array
+    Number of state transitions
+        useState : One or two
+        useReducer : Too many
+    Related state transitions?
+        useState : No
+        useReducer : Yes
+    Business logic
+        useState : No Business Logic
+        useReducer : Complex Business Logic
+    Local vs global
+        useState : Local
+        useReducer : Global
+
+useCallback Hook
+    What?
+        useCallback is a hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed.
+    Why?
+        It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.
+
+        In case of useCallback we use React.memo while exporting, this is important since if the component does not have a function getting used, then React.memo will make sure to see if any change is made or not.
+
+In case of React.memo(), react has to store the previous value and then compare to see if any changes occur or not in the component. This will still cost us.
+    Exception 1: 
+    In the children props or the props passed into the child is a value type like string, number it does not re-render.
+    However if the value type is a reference type like array or an object then it will re-render if the value does not change also. 
+    This is because they are reference type whose reference might keep changing each time. Hence we have the component re-render each time.
+    Exception 2: 
+        Imagine a case of a button, where it has onClick handler being passed as a prop from its parent component, now the React.memo() will still not work because each the button gets clicked the function gets executed which is an act of state change, Hence the component will re-render().  
+
+Solution for Exception 2: useCallback helps react store the function in the internal memory, whenever the component gets re-rendered it picks up the function from the memory.
+
+useMemo is very similar to that of useCallback.
+    When we have to cache the value of the function then go for useMemo.
+    If you have cache the function itself then go for useCallback.
+
+
+
+Custom Hooks
+    A custom Hook is basically a JavaScript function whose name starts with "use".
+    A custom hook can also call other Hooks if required.
+Why?
+    Share logic — Alternative to HOCs and Render Props
+
+
+What is react hook form?
+    A small library that helps deal with forms in React.
+Why we need react hook form?
+    Manage form data.
+    Submit form data.
+    Enforce validations.
+    Provide visual feedback.
+    React Hook Form provides a simple, scalable, and performant way to manage even the most complex of forms.
+
+Managing Form State
+    Every form has a few moving parts that keep changing from the time a user loads the form to the time they submit it.
+        current value of every field in the form.
+        whether a field has been interacted with.
+        whether a field's value has changed.
+        whether the form is invalid.
+        whether a field contains errors.
+
+A ref is nothing but a reference variable which stores a reference to a DOM element. We can store a store element in a variable.
+
+Side Effects Example: 
+    1) HTTP Requests.
+    2) Storing Data in browser storage.
+    3) Working with timer functions.
+
+React Context limitations:
+  1) When we use context in a component, it might make that component non-reusable.
+  2) React context is not optimized for high frequency changes? We can use other tools like Redux for managing app wide state for frequently changing states.
+
+Never Store or connect to database directly from client side application. Use node to connect to database so that your credentials will be safe.
+Firebase is easy solution as backend for learning purpose.

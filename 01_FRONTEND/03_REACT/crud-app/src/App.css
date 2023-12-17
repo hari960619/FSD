@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Rubik+Doodle+Shadow&family=Silkscreen&family=Special+Elite&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --headingFont: "Rubik Doodle Shadow";
+  --buttonFont: "Silkscreen";
+  --formFont: "Special Elite";
+  --bodyFont: "Bodoni Moda";
+}
+
+.hF {
+  font-family: var(--headingFont);
+}
+
+.bF {
+  font-family: var(--bodyFont);
+}
+
+.btnF {
+  font-family: var(--buttonFont);
+  font-weight: bold;
+}
+
+.iF {
+  font-family: var(--formFont);
+  font-weight: bold;
+}
+
+.appBody {
+  height: 100vh;
+  padding: 10px 5px;
+}
+
+.appBody.light {
+  background-color: #dee4e7;
+  color: #0f0f10;
+}
+
+.appBody.dark {
+  background-color: #0f0f10;
+  color: #dee4e7;
+}
+
+#modeButton {
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+button,
+input {
+  display: block;
+  padding: 2.5px;
+}
+
+.displayBox {
+  height: 250px;
+  width: 250px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10%;
+  border: solid green 5px;
+}
+
+.displayBox.light {
+  background: wheat;
+}
+
+.displayBox.dark {
+  background-color: black;
+}
+
+.navBarDiv {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  justify-content: space-between;
+  margin: 0 auto;
+}

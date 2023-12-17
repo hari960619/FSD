@@ -1,0 +1,12 @@
+Types of DS:
+
+    1) Linear Data Structure: A data structure is linear when all the elements are arranged in a linear (sequential) order. 
+        Examples: Array, Stack, Queue, Linked List.
+        (It can be also mentioned as if each element has only one successor and predecessor.)
+
+    2) Non Linear Data Structure: A data structure is non linear when all the elements are not arranged in a linear (sequential) order. There is no linear arrangement of the elements.
+
+    The Classification can be made on another context: 
+
+    a) Static Data Structure: In these type of data structures, the memory is allocated at compile time. Therefore, maximum size is fixed.
+    b) Dynamic Data Structure: In these type of data structures, the memory is allocated at run time. Therefore, maximum size is flexible.

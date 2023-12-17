@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&family=Roboto+Mono&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  color: wheat;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
+
+.ct {
+  text-align: center;
+}
+
+.appTitle {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.35rem !important;
+}
+
+.space {
+  letter-spacing: 0.15rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.createProductBlock {
+  font-family: "Roboto Mono", monospace !important;
+  background-color: darkcyan;
+  width: 95%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.cancelBtn {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+.addBtn {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+.singleProduct {
+  display: flex;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 12.5px;
+  justify-content: space-between;
+}
+
+img {
+  height: 200px;
+  width: 225px;
+  border-radius: 5px;
+}
+
+.productDescription {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  justify-content: space-around;
+}
+
+button {
+  font-family: inherit;
+  padding: 2.5px 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.isAvailable {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: monospace;
+  letter-spacing: 0.1rem;
+  font-size: 1.25rem;
+}
+
+.notAvailable {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: monospace;
+  letter-spacing: 0.1rem;
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  font-size: 1.25rem;
+}
+
+.stockBlock {
+  letter-spacing: 0.15rem;
+}
+
+.stockBlock h3 {
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.addProductBlock {
+  background-color: darkcyan;
+  width: 80%;
+  margin: 5px auto;
+  border-radius: 5px;
+  color: wheat;
+  padding: 3.5px 0;
+}
+.namePriceDiv {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+}
+
+.namePriceDiv div {
+  display: flex;
+  padding: 10px;
+}
+
+input,
+label {
+  font-family: inherit;
+  font-size: 0.98rem;
+  padding: 0 2.5px;
+}
+
+.productDescriptionDiv {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.productDescriptionDiv input {
+  width: 100%;
+}
+
+.isProductAvailable {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#isProductAvailable {
+  cursor: pointer;
+}
+
+.uploadPic {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: wheat;
+  color: black;
+  border-radius: 3.5px;
+  font-size: 1.25rem;
+  padding: 5px;
+}
+
+.uploadPic input {
+  font-family: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.addProductBtn {
+  display: block;
+  width: 80%;
+  background-color: blueviolet;
+  color: wheat;
+  font-size: 1rem;
+  margin: 20px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+select {
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.filterBlock {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.npAvail {
+  text-align: center;
+  width: fit-content;
+  background-color: crimson;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: antiquewhite;
+}
+
+.isVegDiv {
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.separateTypeBlock {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+
+.typeMention {
+  border: 2.5px solid whitesmoke;
+  width: fit-content;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+.alertBlock {
+  font-family: "Ephesis", cursive;
+  letter-spacing: 0.1rem;
+  background-color: aquamarine;
+  color: black;
+  width: 80%;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.alertBlock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.alertBlock button {
+  font-weight: bold;
+}
+
+.shwMd {
+  display: block;
+  margin: 10px auto;
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,34 @@
+import React, { useRef, useEffect } from 'react';
+
+const IntervalComponent = () => {
+  const intervalId = useRef(null);
+
+  useEffect(() => {
+    intervalId.current = setInterval(() => {
+      // Perform actions using intervalId.current
+      console.log('Interval is running...');
+    }, 1000);
+
+    return () => {
+      // Clear interval on component unmount
+      clearInterval(intervalId.current);
+    };
+  }, []);
+
+  return (
+    <div>
+      <p>Interval Component</p>
+      {/* ... */}
+    </div>
+  );
+};
+
+export default IntervalComponent;
+
+The IntervalComponent sets up an interval using setInterval inside the useEffect.
+
+intervalId (created with useRef) is used to hold the reference to the interval ID returned by setInterval.
+
+The cleanup function returned by useEffect clears the interval using clearInterval when the component unmounts, ensuring no memory leaks or intervals continue after the component is removed from the DOM.
+
+These examples showcase the versatility of useRef in preserving references, storing previous values, and managing cleanup tasks in React functional components.

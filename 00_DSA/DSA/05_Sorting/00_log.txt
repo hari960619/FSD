@@ -1,0 +1,106 @@
+// Bubble sort 
+// Selection sort
+// Insertion sort
+// Merge sort
+// Quick sort
+
+**Bubble Sort:**
+Easy:
+1. Write a JavaScript function to implement the Bubble Sort algorithm.
+2. Given an array of integers, sort it using Bubble Sort in ascending order.
+3. Implement a function to count the number of swaps made during the Bubble Sort process.
+4. Sort an array of strings using Bubble Sort in alphabetical order.
+5. Write a function to check if an array is already sorted using Bubble Sort.
+Medium Difficult:
+6. Modify the Bubble Sort algorithm to sort an array in descending order.
+7. Implement a version of Bubble Sort that stops early if no swaps are made during a pass.
+8. Write a function to perform a single pass of the Bubble Sort algorithm.
+9. Implement the Bubble Sort algorithm with a time complexity of O(n) for nearly sorted arrays.
+10. Create a visualization of the Bubble Sort algorithm using HTML and CSS.
+Hard:
+11. Use Bubble Sort to find the kth smallest (or largest) element in an unsorted array efficiently.
+12. Implement an optimized version of Bubble Sort using the "cocktail shaker" or "bidirectional" approach.
+13. Write a function to perform a stable Bubble Sort (maintains the order of equal elements).
+14. Compare the performance of Bubble Sort with other sorting algorithms on large datasets.
+15. Implement a multi-threaded version of Bubble Sort in JavaScript.
+
+**Selection Sort:**
+Easy:
+1. Write a JavaScript function to implement the Selection Sort algorithm.
+2. Sort an array of integers using Selection Sort in ascending order.
+3. Find the minimum and maximum values in an array using Selection Sort.
+4. Implement Selection Sort for an array of objects based on a specific property.
+5. Write a function to find the index of the smallest element in an array using Selection Sort.
+Medium Difficult:
+6. Modify Selection Sort to sort an array in descending order.
+7. Implement a stable version of Selection Sort.
+8. Find the kth smallest (or largest) element in an array using Selection Sort efficiently.
+9. Implement Selection Sort as a stable sorting algorithm.
+10. Create a visualization of the Selection Sort algorithm using HTML and CSS.
+Hard:
+11. Implement a parallel version of Selection Sort in JavaScript using Web Workers.
+12. Compare the performance of Selection Sort with other sorting algorithms on large datasets.
+13. Write a version of Selection Sort that works for linked lists.
+14. Optimize Selection Sort to minimize the number of swaps.
+15. Implement a hybrid sorting algorithm that combines Selection Sort with another sorting method for improved performance.
+
+**Insertion Sort:**
+Easy:
+1. Write a JavaScript function to implement the Insertion Sort algorithm.
+2. Sort an array of integers using Insertion Sort in ascending order.
+3. Implement Insertion Sort for an array of strings in alphabetical order.
+4. Find the index where a new element should be inserted into a sorted array.
+5. Write a function to check if an array is already sorted using Insertion Sort.
+Medium Difficult:
+6. Modify Insertion Sort to sort an array in descending order.
+7. Implement an optimized version of Insertion Sort using binary search for insertion.
+8. Sort a linked list using the Insertion Sort algorithm.
+9. Create a visualization of the Insertion Sort algorithm using HTML and CSS.
+10. Implement an in-place version of Insertion Sort that uses O(1) extra space.
+Hard:
+11. Implement a stable version of Insertion Sort.
+12. Compare the performance of Insertion Sort with other sorting algorithms on large datasets.
+13. Write a function to perform a binary insertion into a sorted array.
+14. Implement Insertion Sort using a divide-and-conquer approach.
+15. Develop a parallel version of Insertion Sort using Web Workers in JavaScript.
+
+**Merge Sort:**
+Easy:
+1. Write a JavaScript function to implement the Merge Sort algorithm.
+2. Sort an array of integers using Merge Sort in ascending order.
+3. Merge two sorted arrays into a single sorted array.
+4. Implement Merge Sort for an array of strings in alphabetical order.
+5. Write a function to find the middle of an array for Merge Sort.
+Medium Difficult:
+6. Modify Merge Sort to sort an array in descending order.
+7. Implement an iterative version of Merge Sort.
+8. Sort a linked list using the Merge Sort algorithm.
+9. Create a visualization of the Merge Sort algorithm using HTML and CSS.
+10. Implement Merge Sort with a time complexity of O(n) for already sorted arrays.
+Hard:
+11. Implement an in-place version of Merge Sort with constant space complexity.
+12. Compare the performance of Merge Sort with other sorting algorithms on large datasets.
+13. Write a parallelized version of Merge Sort in JavaScript.
+14. Implement a stable version of Merge Sort.
+15. Develop a hybrid sorting algorithm that combines Merge Sort with another sorting method for improved performance.
+
+**Quick Sort:**
+Easy:
+1. Write a JavaScript function to implement the Quick Sort algorithm.
+2. Sort an array of integers using Quick Sort in ascending order.
+3. Implement Quick Sort for an array of strings in alphabetical order.
+4. Find the pivot element in an array for Quick Sort.
+5. Write a function to check if an array is already sorted using Quick Sort.
+Medium Difficult:
+6. Modify Quick Sort to sort an array in descending order.
+7. Implement an optimized version of Quick Sort with a randomized pivot selection.
+8. Sort a linked list using the Quick Sort algorithm.
+9. Create a visualization of the Quick Sort algorithm using HTML and CSS.
+10. Implement Quick Sort with three-way partitioning for duplicate elements.
+Hard:
+11. Implement an in-place version of Quick Sort with constant space complexity.
+12. Compare the performance of Quick Sort with other sorting algorithms on large datasets.
+13. Write a parallelized version of Quick Sort in JavaScript.
+14. Implement a stable version of Quick Sort.
+15. Develop a hybrid sorting algorithm that combines Quick Sort with another sorting method for improved performance.
+

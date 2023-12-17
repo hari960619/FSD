@@ -1,0 +1,8 @@
+// NOT SOLVED
+// Given a quadratic equation in the form ax2 + bx + c. Find its roots. formula : (-b + Math.sqrt(b**2 - 4ac))/2 & (-b - Math.sqrt(b**2 - 4ac))/2.
+
+// SOLVED
+// You are given an integer I, find the absolute value of the integer I.
+// Given a temperature in celsius C. You need to convert the given temperature to Fahrenheit.
+// Given an integer N. Find the number of digits that appear in its factorial. 
+Factorial is defined as, factorial(n) = 1*2*3*4……..*N and factorial(0) = 1.

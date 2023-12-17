@@ -1,0 +1,25 @@
+Imagine you have a list of records with two key fields: "Name" and "Age." You want to sort these records first by "Name" and then by "Age" to break ties. If you use a stable sorting algorithm, it guarantees that when two records have the same "Name," their relative order in the sorted list will be determined by their "Age." In other words, if Alice and Bob have the same "Name," and Alice is older than Bob, then in the sorted list, Alice will appear before Bob.
+
+Stability is an important property in sorting algorithms because it ensures that you can perform multi-level sorting or sorting by multiple criteria without inadvertently changing the order of elements that are considered equal according to the previous sorting criteria.
+
+Certainly! Here's a list of common sorting algorithms, along with their stability and time complexities, sorted by stability and time complexity (in ascending order):
+
+Stable Sorting Algorithms:
+
+1. Bubble Sort: Worst: O(n^2) || Average: O(n^2) || Best: O(n) 
+2. Insertion Sort: Worst: O(n^2) || Average: O(n^2) || Best: O(n)
+3. Merge Sort: Worst: O(n log n) || Average: O(n log n) || Best: O(n log n)
+4. Tim Sort: Worst: O(n log n) || Average: O(n log n) || Best: O(n)
+5. Counting Sort: Worst: O(n + k) || Average: O(n + k) || Best: O(n + k) 
+    where k is the range of input values.
+6. Radix Sort: Worst: O(nk) ||  Average: O(nk) || Best: O(nk)
+    where k is the number of digits in the maximum number.
+7. Cycle Sort: Worst: O(n^2) || Average: O(n^2) || Best: O(n^2)
+
+**Unstable Sorting Algorithms:**
+
+1. Quick Sort: Worst O(n^2) || Average O(n log n || Best O(n log n)
+2. Heap Sort: Worst O(n log n) || Average O(n log n) || Best O(n log n)
+3. Selection Sort: Worst O(n^2) || Average O(n^2) || Best O(n^2)
+4. Shell Sort: Worst: Depends on the gap sequence used can vary between O(n log^2 n) and O(n^(4/3)) || Average: Depends on the gap sequence used || Best: O(n log n) 
+

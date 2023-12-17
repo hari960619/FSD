@@ -1,0 +1,9 @@
+JS programs are called scripts.
+Unlike Java, scripts do not require any compilation to run. 
+JS can execute in a browser, on a server and on any device that has a ‘JavaScript Engine’. 
+JS does not provide low-level access to memory or CPU, which is why it is a ‘safe’ programming language.
+V8 engine is written in C++. It was released by google in 2008.  JavaScript is not a class-based language it is prototype based language. 
+Brendan Eich created the first JS Engine.
+Spider Monkey was the first JS Engine, which is seen in Mozilla FireFox.
+Some Browser API's: DOM, setTimeout, console.
+Some node.js API's: fs, 
