@@ -1,0 +1,36 @@
+// MEDIA QUERIES
+
+/* CSS styles for small mobile devices */
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* CSS styles for portrait tablets and large phones */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* CSS styles for landscape tablets */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* CSS styles for laptops/desktops */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* CSS styles for large laptops and desktops */
+@media only screen and (min-width: 1201px) {
+  body {
+    background-color: white;
+  }
+}

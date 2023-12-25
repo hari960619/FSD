@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+  /* CSS styles for small mobile devices */
+  #box {
+    background-color: black;
+    color: white;
+  }
+  button {
+    font-size: 1rem;
+    background: "green";
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 577px to 768px) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  /* CSS styles for portrait tablets and large phones */
+  #box {
+    background-color: yellow;
+    color: black;
+  }
+  button {
+    font-size: 2rem;
+    background: "green";
+  }
+}
+
+/* Medium devices (landscape tablets, 769px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS styles for landscape tablets */
+  #box {
+    background-color: blue;
+    color: white;
+  }
+  button {
+    font-size: 3rem;
+    background: "green";
+  }
+}
+
+/* Large devices (laptops/desktops, 993px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* CSS styles for laptops/desktops */
+  #box {
+    background-color: green;
+    color: white;
+  }
+  button {
+    font-size: 4rem;
+    background: "green";
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1201px and up) */
+@media only screen and (min-width: 1201px) {
+  /* CSS styles for large laptops and desktops */
+  #box {
+    background-color: red;
+    color: black;
+  }
+  #btn {
+    background-color: green;
+  }
+  button {
+    font-size: 5rem;
+    color: blue;
+    padding: 15px;
+  }
+}

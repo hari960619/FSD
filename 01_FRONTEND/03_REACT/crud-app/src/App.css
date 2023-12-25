@@ -1,88 +1,215 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Rubik+Doodle+Shadow&family=Silkscreen&family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;700&family=Open+Sans:wght@300;400;500&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --headingFont: "Rubik Doodle Shadow";
-  --buttonFont: "Silkscreen";
-  --formFont: "Special Elite";
-  --bodyFont: "Bodoni Moda";
-}
-
-.hF {
-  font-family: var(--headingFont);
-}
-
-.bF {
   font-family: var(--bodyFont);
 }
 
-.btnF {
-  font-family: var(--buttonFont);
+:root {
+  --headingFont: "Afacad", sans-serif;
+  --bodyFont: "Open Sans", sans-serif;
+}
+
+#titleDiv {
+  background-color: cornflowerblue;
+  margin: 10px;
+  border-radius: 5px;
+  color: lemonchiffon;
+  /* height: 7.5vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#appTitle {
+  font-family: var(--headingFont);
+  text-align: center;
   font-weight: bold;
+  letter-spacing: 0.05rem;
+  animation: title-animation 2s linear infinite;
 }
 
-.iF {
-  font-family: var(--formFont);
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+/* @keyframes title-animation {
+  0% {
+    font-size: 1.5rem;
+  }
+  25% {
+    font-size: 1.75rem;
+  }
+  50% {
+    font-size: 2rem;
+  }
+  75% {
+    font-size: 1.75rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+} */
+
+button {
   font-weight: bold;
+  letter-spacing: 0.085rem;
+  padding: 2.5px 5px;
+  display: block;
+  margin: 10px auto;
 }
 
-.appBody {
-  height: 100vh;
-  padding: 10px 5px;
+.addModalDiv {
+  height: 100%;
+  width: 100%;
+  background: rgba(127, 120, 120, 0.5);
+  position: absolute;
+  top: 0;
 }
 
-.appBody.light {
-  background-color: #dee4e7;
-  color: #0f0f10;
-}
-
-.appBody.dark {
-  background-color: #0f0f10;
-  color: #dee4e7;
-}
-
-#modeButton {
+#crossBtn {
+  background-color: transparent;
+  border-radius: 5px;
+  position: absolute;
+  right: 15%;
+  top: 2.5%;
   border: none;
-  background: none;
-  font-size: 2rem;
-  cursor: pointer;
   outline: none;
 }
 
-button,
-input {
-  display: block;
-  padding: 2.5px;
-}
-
-.displayBox {
-  height: 250px;
-  width: 250px;
-  margin: 10px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 10%;
-  border: solid green 5px;
-}
-
-.displayBox.light {
+.formDiv {
   background: wheat;
 }
 
-.displayBox.dark {
-  background-color: black;
+input {
+  outline: none;
 }
 
-.navBarDiv {
+.formDiv {
+  width: 80%;
+  margin: 10px auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 75%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.formDiv div {
+  padding: 5px 0;
+  margin: 5px auto;
+}
+
+input {
+  padding: 5px;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  text-align: center;
+  font-family: var(--headingFont);
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+.radioDiv {
+  display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  align-items: center;
+}
+
+.radioDiv label {
+  margin: 0 auto;
+}
+
+span {
+  font-weight: bold;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#dob {
+  width: fit-content;
+}
+
+#male {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#female {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#other {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#errorLine {
+  font-family: var(--headingFont);
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  border-bottom: 2.5px solid black;
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    font-size: 1rem;
+  }
+  25% {
+    font-size: 1.25rem;
+  }
+  50% {
+    font-size: 1.5rem;
+  }
+  75% {
+    font-size: 1.25rem;
+  }
+  100% {
+    font-size: 1rem;
+  }
+}
+
+.getResumeTitle {
+  font-family: var(--headingFont);
+  letter-spacing: 0.15rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  width: fit-content;
+  margin: 0 auto;
+  border: 2.5px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2.5px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+th {
+  font-family: var(--headingFont);
+  letter-spacing: 0.15rem;
+  font-size: 1.25rem;
 }

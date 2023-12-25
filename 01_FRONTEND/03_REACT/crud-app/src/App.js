@@ -1,15 +1,19 @@
 import "./App.css";
-import { useState } from "react";
-import Navbar from "./components/Navbar";
+import AddProduct from "./components/AddResume";
+import GetResume from "./components/GetResume";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  function handleModes(value) {
-    setDarkMode(value);
-  }
   return (
-    <div className={`appBody ${darkMode ? "dark" : "light"}`}>
-      <Navbar setMode={handleModes} mode={darkMode} />
+    <div>
+      <div id="titleDiv">
+        <h1 id="appTitle">Resume Repository</h1>
+      </div>
+      <div className="addProductDiv">
+        <AddProduct />
+      </div>
+      <div>
+        <GetResume />
+      </div>
     </div>
   );
 }
